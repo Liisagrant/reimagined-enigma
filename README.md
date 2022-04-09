@@ -1,2 +1,3 @@
 # reimagined-enigma
-javascript first time
+
+just trying out some stuff. Nothing much

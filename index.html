@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,25 +23,20 @@
   <body>
     <header class="wave">
       <nav id="navbar">
-        <a class="container logo">
+        <a class="container logo" href="#top">
           <img src="/media/Logo-2.svg" alt="logo" />
         </a>
         <ul class="container nav-links">
-          <li><a>About</a></li>
-          <li><a>Work</a></li>
-          <li><a>Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
     <div class="container">
-      <div class="home-front-flex">
+      <div class="home-front-flex" id="top">
         <div class="text-style">
           <h1>Hi, I am Lisa!</h1>
-          <p>
-            Welcom to my page.
-            <!-- At the moment I am a student and Noroff the school of technology and
-            digital media in Oslo. -->
-          </p>
         </div>
       </div>
     </div>
@@ -59,25 +61,81 @@
           touch if you have any questions
         </p>
       </div>
-      <div class="about-me-img-box">
-        <div
-          class="slideshow flower-1"
-          role="img"
-          aria-label="Image of a flower"
-        ></div>
-        <div
-          class="slideshow flower-2"
-          role="img"
-          aria-label="Image of a flower"
-        ></div>
-        <div
-          class="slideshow flower-3"
-          role="img"
-          aria-label="Image of a flower"
-        ></div>
+    </section>
+    <section class="my-work container" id="work">
+      <div class="my-work-text">
+        <h2>My Work</h2>
+        <p>
+          This is the work I have done so far in my first year at Noroff the
+          school of technology and digital media in Oslo. My first year has
+          thought me so much, but I still have a lot to learn. I hope you enjoy
+          looking at the work I have done so far.
+        </p>
+        <div class="card-box">
+          <div class="card">
+            <div class="card-img img-1"></div>
+            <h3>RainyDays</h3>
+            <p>Is a online jacket shop focusing on high quality rainjackets</p>
+            <div class="card-links">
+              <a href="https://nostalgic-mayer-e26204.netlify.app"
+                >Visit page</a
+              >
+              <a
+                href="https://github.com/Noroff-Fagskole/html-and-css-course-assignment-Liisagrant"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img img-2"></div>
+            <h3>Community Science Museum</h3>
+            <p>
+              Is a science Museum with a lot of difrent exhibitions and fun
+              activity for the kids
+            </p>
+            <div class="card-links">
+              <a href="https://serene-tereshkova-03f372.netlify.app/"
+                >Visit page</a
+              >
+              <a
+                href="https://github.com/Noroff-Fagskole/semester-project-1-Liisagrant"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img img-3"></div>
+            <h3>Mia and bob`s Travel blog</h3>
+            <p>
+              Is a travel blog of two young adults who travel all around the
+              world
+            </p>
+            <div class="card-links">
+              <a href="https://roaring-marzipan-949090.netlify.app/"
+                >Visit page</a
+              >
+              <a
+                href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Liisagrant"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="my-work" id="Work"></section>
-    <section class="Contact" id="Contact"></section>
+    <section class="contact-me container" id="contact">
+      <h2>Contact me</h2>
+      <div class="contact-links">
+        <a href="mailto:lisagrant1990@gmail.com">Email me!</a>
+        <a href="https://www.linkedin.com/in/lisa-grant-61249221a/">LinkedIn</a>
+      </div>
+      <div class="good-day-img-box container">
+        <div class="good-day-img"></div>
+        <h3>Wish you a GOOD day!</h3>
+      </div>
+    </section>
+    <footer>
+      <p class="container">&copy;lisagrant2022.</p>
+    </footer>
   </body>
 </html>

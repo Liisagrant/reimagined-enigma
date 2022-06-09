@@ -10,7 +10,7 @@ My portfolio number two
 
 - HTML5
 - CSS
--JavaScript
+- JavaScript
 
 ## To Do
 -Want to add more content and effects to make it cooler

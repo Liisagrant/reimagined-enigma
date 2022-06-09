@@ -5,10 +5,10 @@
 
 header {
   display: flex;
-  height: 80px;
+  height: 100px;
   width: 100%;
-  background-color: #dedde226;
-  backdrop-filter: blur(30px);
+  background-color: #266d81;
+  /* backdrop-filter: blur(30px); */
 }
 
 :root {
@@ -43,38 +43,85 @@ body {
   }
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-
-img {
-  position: fixed;
-  bottom: -80px;
-  left: 0;
-  height: 350px;
-}
-
 h1 {
   font-family: "Libre Franklin", sans-serif;
   font-weight: black 900;
   color: #ffffff;
+  padding: 8px;
+  text-align: center;
 }
 
-h2,
-h3,
-h4 {
-  font-size: 18px;
-  color: #ffffff;
+h2 {
+  font-size: 30px;
+  color: #e9e3e3;
   font-family: "Biryani", sans-serif;
+  margin: 16px;
+  text-shadow: 1px 1px black;
 }
 
-p {
+p,
+li,
+a {
   font-size: 16px;
   color: #ffffff;
   font-family: "Shanti", sans-serif;
+  margin: 16px;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff26;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.logo img {
+  height: 50px;
+  padding: 0 16px;
+}
+
+nav li {
+  list-style: none;
+  padding: 0;
+  margin: 8px;
+}
+
+nav li a {
+  font-size: 15px;
+  padding: 4px;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 2px 2px black;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  margin-right: 16px;
+}
+.container {
+  max-width: 987px;
+  margin: 0 auto;
 }
 
 .home-front-flex {
@@ -84,20 +131,60 @@ p {
   justify-content: center;
 }
 
+.home-front-flex p,
+.home-front-flex h1 {
+  text-align: center;
+}
+
 .home-front-flex h1 {
   font-size: 40px;
-  align-items: center;
-  margin: 90px 40px 30px 0;
+  margin: 90px auto 0;
   text-shadow: 3px 3px rgb(31, 30, 30);
 }
 
-/*.box-first-paget {
-  position: fixed;
-  bottom: 40px;
-  right: 20px;
-  border-radius: 50%;
-  height: 200px;
-  width: 155px;
+.box-first-page {
+  position: relative;
+  bottom: 0;
+  left: 0%;
+  height: 300px;
+  width: 70%;
   background-color: #ffffff26;
   backdrop-filter: blur(10px);
-}*/
+  border: 1px solid #01313a;
+  border-radius: 50%;
+  /* transform: translateX(-50%); */
+  margin-bottom: 200px;
+}
+
+.first-box-img {
+  background-image: url(/img/lisagrant-removebg-preview.png);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 470px) {
+  .box-first-page {
+    height: 400px;
+  }
+
+  .first-box-img {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .box-first-page {
+    height: 500px;
+    max-width: 400px;
+  }
+
+  .first-box-img {
+    height: 500px;
+    max-width: 400px;
+  }
+  .home-front-flex h1 {
+    font-size: 80px;
+  }
+}

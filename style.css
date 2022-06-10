@@ -6,14 +6,8 @@
   scroll-margin-top: 100px;
 }
 
-header {
-  display: flex;
-  height: 100px;
-  width: 100%;
-  background-color: #266d81;
-}
-
 :root {
+  --header--footer: #0f5a6e;
   --gradient: linear-gradient(
     90deg,
     #01313a,
@@ -23,6 +17,13 @@ header {
     #5e9fb1,
     #90c0c9
   );
+}
+
+header {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: var(--header--footer);
 }
 
 body {
@@ -56,7 +57,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 30px;
-  color: #e9e3e3;
+  color: #f7ebeb;
   font-family: "Biryani", sans-serif;
   margin: 16px;
   text-shadow: 1px 1px black;
@@ -83,6 +84,11 @@ a {
 
 a {
   cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: 800;
 }
 
 #navbar {
@@ -170,8 +176,7 @@ nav li a {
   text-shadow: 3px 3px rgb(31, 30, 30);
 }
 
-.box-first-page,
-.good-day-img-box {
+.box-first-page {
   position: relative;
   bottom: 0;
   left: 0%;
@@ -181,7 +186,6 @@ nav li a {
   backdrop-filter: blur(10px);
   border: 1px solid #01313a;
   border-radius: 50%;
-  /* transform: translateX(-50%); */
   margin-bottom: 200px;
 }
 
@@ -219,17 +223,8 @@ nav li a {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(50%);
-  -webkit-filter: grayscale(50%);
   margin: 8px;
   border-radius: 5px;
-  transition: ease-in-out 600ms;
-}
-
-.card-img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0);
-  transform: translateY(2px) translateX(1px) scale(1.03);
 }
 
 .img-1 {
@@ -300,7 +295,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #266d81;
+  background-color: var(--header--footer);
   height: 100px;
 }
 
@@ -332,11 +327,9 @@ footer {
     height: 500px;
     max-width: 400px;
   }
+
   .home-front-flex h1 {
     font-size: 80px;
-  }
-  .slideshow {
-    height: 300px;
   }
 
   .about-me-img-box {
@@ -348,24 +341,24 @@ footer {
   .about-me {
     flex-direction: row;
   }
-  .slideshow {
-    height: 450px;
-  }
   .about-me-img-box {
     height: 450px;
   }
 
-  .flower-1,
-  .flower-2,
-  .flower-3 {
-    background-position: 90% 10%;
+  .card-img {
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+    transition: ease-in-out 600ms;
+  }
+
+  .card-img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transform: translateY(2px) translateX(1px) scale(1.03);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .slideshow {
-    height: 450px;
-  }
   .about-me-img-box {
     height: 450px;
   }

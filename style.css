@@ -92,7 +92,7 @@ a {
   align-items: center;
   width: 100%;
   background-color: #ffffff26;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(60px);
   overflow: hidden;
   z-index: 10;
 }
